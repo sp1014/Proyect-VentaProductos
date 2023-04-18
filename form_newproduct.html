@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta
+        name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--CDN de bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+
+        <!-- Font Awesome -->
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+        <!-- CSS Propio -->
+        <link rel="stylesheet" href="estilos_form.css"/>
+
+        <title>Super Poli - Nuevo Producto</title>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" class="logooo">
+                        <img src="logoprueba.png" alt="">
+                        <span class="nav-item">Usuario</span>
+                    </a>
+                </li>
+                <li><a>
+                    <i class="fas fa-home"></i>
+                    <span class="nav-item">Inicio</span>
+                    </a>
+                </li>
+                <li><a>
+                    <i class="fas fa-cart-plus"></i>
+                    <span class="nav-item">Producto</span>
+                    </a>
+                </li>
+                <li><a>
+                    <i class="fas fa-plus"></i>
+                    <span class="nav-item">Nuevo Producto</span>
+                    </a>
+                </li>
+                <li><a>
+                    <i class="fas fa-book"></i>
+                    <span class="nav-item">Lista de Productos</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="container h-100">
+            <div class="d-flex justify-content-center h-100">
+                <div class="user_card">
+                    <div class="d-flex justify-content-center">
+                        <div class="brand_logo_container">
+                            <img src="logoprueba.png" class="brand_logo" alt="Logo">
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center form_container">
+                        <form>
+                        <h1><b><p>Nuevo Producto</p><b></h1>
+                        <div class="caja uno">
+                            <b><p>Nombre del Producto:</p></b>
+                            <div class="input-group mb-3">
+                                <div class="input-group-append">
+                                    <!--Icono del Producto--> 
+                                    <span class="input-group-text">
+                                        <i class="fas fa-cart-plus"></i>
+                                    </span>
+                                </div>
+                                <!--Input del producto-->
+                                <input type="text" name="" class="form-control input_user" placeholder="Producto" required>
+                            </div>
+
+                            <b><p>Precio del Producto:</p></b>
+                            <div class="input-group mb-3">
+                                <div class="input-group-append">
+                                    <!--Icono del precio--> 
+                                    <span class="input-group-text">
+                                        <i class="fas fa-dollar-sign"></i>
+                                    </span>
+                                </div>
+                                <!--Input del precio-->
+                                <input type="number" name="" class="form-control input_user" placeholder="Precio" required pattern="[0-9]">
+                            </div>
+
+                            <b><p>Cantidad:</p></b>
+                            <div class="input-group mb-3">
+                                <div class="input-group-append">
+                                    <!--Icono del Cantidad--> 
+                                    <span class="input-group-text">
+                                        <i class="fas fa-plus"></i>
+                                    </span>
+                                </div>
+                                <!--Input del producto-->
+                                <input type="number" name=""  class="form-control input_user" placeholder="Cantidad" required pattern="[0-9]">
+                            </div>
+
+                            <b><p>Imagen Principal:</p></b>
+                            <div class="input-group mb-3">
+                                <div class="input-group-append">
+                                    <!--Icono de imagen del Producto--> 
+                                    <span class="input-group-text">
+                                        <i class="fas fa-image"></i>
+                                    </span>
+                                </div>
+                                <!--Input de imagen del producto-->
+                                <input type="file" name="" class="form-control input_user" placeholder="Añadir imagen" required>
+                            </div>
+
+                            <!--div1--></div>
+                            <div class="caja dos">
+                            <b><p>Descripción del Producto:</p></b>
+                            <div class="input-group mb-3">
+                                <div class="input-group-append">
+                                    <!--Icono descripcion del Producto--> 
+                                    <span class="input-group-text">
+                                        <i class="fas fa-book"></i>
+                                    </span>
+                                </div>
+                                <!--Input descripcion del producto-->
+                                <input type="text" name="" style="WIDTH: 228px; HEIGHT: 140px" size=32 class="form-control input_user" placeholder="Descripcion" required>
+                            </div>
+
+                            <b><p>Imagen 2:</p></b>
+                            <div class="input-group mb-3">
+                                <div class="input-group-append">
+                                    <!--Icono de imagen del Producto--> 
+                                    <span class="input-group-text">
+                                        <i class="fas fa-image"></i>
+                                    </span>
+                                </div>
+                                <!--Input de imagen del producto-->
+                                <input type="file" name="" class="form-control input_user" placeholder="Añadir imagen" required>
+                            </div>
+
+                            <b><p>Imagen 3:</p></b>
+                            <div class="input-group mb-3">
+                                <div class="input-group-append">
+                                    <!--Icono de imagen del Producto--> 
+                                    <span class="input-group-text">
+                                        <i class="fas fa-image"></i>
+                                    </span>
+                                </div>
+                                <!--Input de imagen del producto-->
+                                <input type="file" name="" class="form-control input_user" placeholder="Añadir imagen" required>
+                            </div>
+
+                            </div>
+
+                            <div class="d-flex justify-content-center mt-3 login_container">
+                                <button type="submit" name="button" id="login_button" class="btn login_btn">Agregar Producto</button>
+                            </div>
+
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <footer>
+            
+        </footer>
+
+        <!-- CDN JQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.4.slim.js" integrity="sha256-dWvV84T6BhzO4vG6gWhsWVKVoa4lVmLnpBOZh/CAHU4=" crossorigin="anonymous"></script>
+
+        <!-- CDN Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+        <!-- JS Propio -->
+        <script src="./login.js"></script>
+
+    </body>
+</html>
