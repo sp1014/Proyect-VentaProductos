@@ -12,4 +12,8 @@ $(document).ready(function() {
             passwordIcon.removeClass('fa-eye').addClass('fa-eye-slash');
         }
     });
+    $('form').submit(function(event) { 
+        event.preventDefault();
+        location.href="inicio.html";
+    });   
 });

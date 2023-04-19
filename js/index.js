@@ -33,4 +33,7 @@ $('#btnNavbar').on('click', () => {
         navbar.removeClass('navbar-collapse');
         mainContainer.removeClass('container-navbar-collapse');
     }
-})
+});
+$('.card').on('click', () => {
+    location.href="product.html";
+});
