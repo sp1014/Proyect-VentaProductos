@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta
+        name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--CDN de bootstrap-->
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+
+        <!-- Font Awesome -->
+        <link
+        rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+        <!-- CSS Propio -->
+        <link rel="stylesheet" href="./css/estilos_form.css">
+
+        <title>Super Poli - Formulario agregar productos</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <div class="d-flex justify-content-end boton-">
+                        <button type="button" id="sidebarCollapse" class="btn btn-info">
+                            <i class="fas fa-align-left"></i>
+                        </button>
+                    </div>
+                    <div class="brand_logo_container">
+                        <img src="images/logoprueba.png" class="brand_logo" alt="Logo">
+                    </div>
+                </div>
+
+                <ul class="list-unstyled components">
+                    <p>Páginas</p>
+                    <li>
+                        <a href="./inicio.html" class="nav-link">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="./listProduct.html" class="nav-link">Productos</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link-active">Agregar Productos</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <header>
+                <div class="cabeza">
+        
+                    <div class="d-flex justify-content-center aling-content-center">
+                        <h1>Super Poli</h1>
+                    </div>
+                    
+                    <button 
+                    type="button" 
+                    id="btnMenu"
+                    class="btn-menu absolute bottom-1/2 right-4 translateY-1/2 cursor-pointer">
+                        <div class="bg-white rounded-full w-12 h-12 flex justify-center items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                            </svg>
+                        </div>
+                    </button>
+        
+                    <div class="menu" id="menu">
+                        <a href="#">Cambiar contraseña</a>
+                        <a href="#">Cerrar sesión</a>
+                    </div>
+                    
+                </div>
+            </header>
+
+            <div id="content">
+
+                <h2>Nuevo Producto</h2>
+                <form>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group mt-3">
+                                    <label for="nombre">Nombre del producto:</label>
+                                    <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                                </div>
+                                <div class="form-group mt-3">
+                                    <label for="descripcion">Descripción:</label>
+                                    <textarea class="form-control" id="descripcion" rows="3"></textarea>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-5 form-group">
+                                        <label for="precio">Precio:</label>
+                                        <input type="number" class="form-control" id="precio" placeholder="Precio">
+                                    </div>
+                                    <div class="col-7 mt-4 form-check">
+                                        <label class="form-check-label" for="exampleCheck1">¿Aplica promoción?</label>
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 mt-3 form-group">
+                                        <label for="cantidad">Cantidad:</label>
+                                        <input type="number" class="form-control" id="cantidad" placeholder="Cantidad">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="mt-4 form-group">
+                                        <label for="imagen2">Imagen 2:</label>
+                                        <input type="file" class="form-control-file" id="imagen2">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="mt-4 form-group">
+                                        <label for="imagen3">Imagen 3:</label>
+                                        <input type="file" class="form-control-file" id="imagen3">
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-6 form-group">
+                                <label for="imagen1">Imagen 1:</label>
+                                <input type="file" class="form-control-file" id="imagen1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-end">
+                        <div class="col-4 ">
+                            <button type="submit" class="btn btn-success">Crear</button>
+                            <button type="button" class="btn btn-danger">Cancelar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <!-- CDN JQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.4.slim.js" integrity="sha256-dWvV84T6BhzO4vG6gWhsWVKVoa4lVmLnpBOZh/CAHU4=" crossorigin="anonymous"></script>
+
+        <!-- CDN Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+        <!-- JS Propio -->
+        <script src="js/form.js"></script>
+
+    </body>
+</html>
