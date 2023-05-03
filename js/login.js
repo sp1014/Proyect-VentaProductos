@@ -15,5 +15,18 @@ $(document).ready(function() {
     $('form').submit(function(event) { 
         event.preventDefault();
         location.href="inicio.html";
+        /*$.ajax({
+            url: "http://superpoli.somee.com/api/Product/"+idProducto,
+            type:"GET", 
+            success: function(result){
+                console.log(result);
+                if(result){
+                    location.href="inicio.html";
+                }else{
+                    alert('User No encontrado');
+                }
+            }
+        });*/
+        
     });   
 });
